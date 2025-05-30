@@ -17,7 +17,7 @@ tools = [
 ]
 
 # Initialize local LLM (Ollama)
-llm = Ollama(model="llama3")  # Make sure to run: `ollama run llama3`
+llm = Ollama(model="gemma:2b")  # Make sure to run: `ollama run gemma:2b`
 
 agent = initialize_agent(
     tools,
