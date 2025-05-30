@@ -11,9 +11,13 @@ Routes to a local LLM (via Ollama) for answers
 app.py  ← Flask API (MCP-style server)
 
 │
+
 ├── app.py                 ← Flask API (MCP-style server)-> Flask web server
+
 ├── mcp_agent.py           ← LangChain logic: interprets actions -> LangChain agent
+
 ├── requirements.txt       ← Python dependencies
+
 └── README.md              ← Project overview
 
 ## MCP-based LangChain server 
@@ -85,3 +89,19 @@ pip install langchain langchain-community langchain-core langchainhub
 
 pip install ollama
 
+## gemma:2b ,llama3 has cut off date
+
+Static Knowledge: These models are trained on data available up to a certain point (e.g., mid-2023 for many models). 
+
+They don’t know anything that happened after their training cut-off date.
+
+
+## Want Real News in a LangChain/Ollama Setup?
+
+You can combine the local model with:
+
+RAG (Retrieval-Augmented Generation), where you fetch live news via API (like NewsAPI or Google News),
+
+Then pass that info as context to the LLM to summarize or answer based on it.
+
+LangChain + News API integration using  local Ollama model.
