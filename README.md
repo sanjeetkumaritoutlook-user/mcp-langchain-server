@@ -37,22 +37,22 @@ Or integrate this with a frontend
 
 adding more intelligent tasks or connecting it with a UI!
 
-##Llama models
+## Llama models
 Explore https://ollama.com/library
 
-##Run gemma:2b
+## Run gemma:2b
 
 ollama run gemma:2b
 
 gemma:2b uses just ~2–3 GB RAM.
 
-##Run mistral
+## Run mistral
 
 ollama run mistral
 
 mistral only needs ~4 GB of RAM and still performs quite well for general tasks.
 
-##Run llama3
+## Run llama3
 
 ollama run llama3
 
@@ -61,10 +61,10 @@ Ollama runs models like llama3 entirely on your machine, in memory.
 
 Even though it's optimized, LLaMA 3 still needs at least ~6 GB of RAM free, and ideally more (8–12 GB total system RAM recommended).
 
-##List downloaded models:
+## List downloaded models:
 ollama list
 
-##Pull other models:
+## Pull other models:
 ollama pull mistral
 
 ollama pull codellama
@@ -81,7 +81,7 @@ You need to install the latest LangChain with community modules, specifically:
 pip install langchain-community
 
 
-##Recommended Full Setup (for safety):
+## Recommended Full Setup (for safety):
 
 If you're using LangChain with Ollama, it's best to ensure these are installed:
 
