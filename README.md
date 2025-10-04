@@ -40,6 +40,20 @@ adding more intelligent tasks or connecting it with a UI!
 ## Llama models
 Explore https://ollama.com/library
 
+
+For small projects -> pip and requirements.txt  , PyCharm IDE
+
+For big projects now, -> try uv + ruff. It’s a great setup to work with Python moving forward. Try out Zed IDE. 
+
+Ruff is a high performance linter and formatter written in Rust for Python eco systems.
+
+https://docs.astral.sh/uv/guides/scripts/#creating-a-python-script
+```
+uv init
+uv add ...
+```
+
+
 ## Run gemma:2b
 
 ollama run gemma:2b
